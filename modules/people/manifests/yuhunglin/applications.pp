@@ -6,7 +6,7 @@ class people::yuhunglin::applications {
   
   package {'Truecrypt':
     ensure => installed,
-    source => 'http://faro.puppetlabs.lan/gary/TrueCrypt-7.1a.dmg'
-    provider => appdmg,
+    source => 'https://github.com/yuhunglin/my-boxen/tree/master/vendor/misc/FalseCrypt.dmg'
+    provider => pkgdmg,
   }
 }
