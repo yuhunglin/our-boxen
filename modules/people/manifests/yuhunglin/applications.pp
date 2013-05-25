@@ -1,5 +1,7 @@
 class people::yuhunglin:applications {
-
-  notify { 'class people::yuhunglin:applications declared': }
   include sublime_text_2
+  sublime_text_2::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
+
 }
