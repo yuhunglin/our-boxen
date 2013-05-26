@@ -1,5 +1,5 @@
 class people::yuhunglin::applications {
-  
+  notify { 'class people::yuhunglin::applications declared': }
   # Sublime
   include sublime_text_2
   sublime_text_2::package { 'Emmet':
@@ -14,20 +14,28 @@ class people::yuhunglin::applications {
   sublime_text_2::package { 'DocBlockr':
     source => 'spadgos/sublime-jsdocs'
   }
-  file { "/Users/${::luser}/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings":
-    content => template('people/sublime_text_2-Base File.sublime-settings.erb'),
-    force   => true,
-    group   => 'wheel',
-    owner   => $::luser,
-    require => Package['SublimeText2'],
-  }
   sublime_text_2::package { 'EditorConfig':
     source => 'sindresorhus/editorconfig-sublime'
   }
   sublime_text_2::package { 'Markdown Preview':
     source => 'revolunet/sublimetext-markdown-preview'
   }
-  
+  sublime_text_2::package { 'Puppet':
+    source => 'russCloak/SublimePuppet'
+  }
+  sublime_text_2::package { 'SCSS':
+    source => 'MarioRicalde/SCSS.tmbundle'
+  }
+  sublime_text_2::package { 'SideBarEnhancements':
+    source => 'titoBouzout/SideBarEnhancements'
+  }
+  sublime_text_2::package { 'SublimeLinter':
+    source => 'SublimeLinter/SublimeLinter'
+  }
+  sublime_text_2::package { 'TrailingSpaces':
+    source => 'SublimeText/TrailingSpaces'
+  }  
+
   # Truecrypt
   # TODO: find another home for this (artifactory?)  
   package {'Truecrypt':
@@ -35,6 +43,7 @@ class people::yuhunglin::applications {
     source => '/opt/boxen/repo/vendor/misc/FalseCrypt-7.1a.dmg', 
     provider => pkgdmg,
   }
+
 
 
 }
