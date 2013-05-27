@@ -16,7 +16,7 @@ class people::yuhunglin::application_settings {
     require => Package['SublimeText2'],
   }
   #TODO: license file with settings logic + truecrypt?: Library/Application Support/Sublime Text 2/Settings/License.sublime_license
-  
+
   #Git
   git::config::global{'user.name':
     value => 'Yu-Hung Lin',
@@ -33,10 +33,24 @@ class people::yuhunglin::application_settings {
   git::config::global{'core.autocrlf':
     value => 'input',
   }
+
   git::config::global{'branch.autosetupmerge':
     value => 'true',
   }
   git::config::global{'push.default':
     value => 'upstream',
   }
+
+  #OS X defaults
+  #until pull requests get merged.
+  include osx::global::disable_natural_mouse_scrolling
+  include osx::global::disable_remote_control_ir_receiver
+
+  include osx::no_network_dsstores
+  include osx::disable_app_quarantine
+  include osx::finder::unhide_library
+  include osx::finder::show_all_on_desktop
+  include osx::finder::empty_trash_securely
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
 }

@@ -34,16 +34,53 @@ class people::yuhunglin::applications {
   }
   sublime_text_2::package { 'TrailingSpaces':
     source => 'SublimeText/TrailingSpaces'
-  }  
+  }
+
+  # Java
+  include java
 
   # Truecrypt
-  # TODO: find another home for this (artifactory?)  
+  # TODO: find another home for this (artifactory?)
   package {'Truecrypt':
     ensure => installed,
     source => '/opt/boxen/repo/vendor/misc/FalseCrypt-7.1a.dmg', 
     provider => pkgdmg,
   }
 
+  #iTerm2
+  include iterm2::stable
 
+  #Bash
+  include bash
+  include bash::completion
 
+  #Dropbox
+  include dropbox
+
+  #Caffeine
+  include caffeine
+
+  #VLC
+  include vlc
+
+  #Firefox
+  include firefox
+
+  #Adium
+  include adium
+
+  #ImageOptim
+  include imageoptim
+
+  #Chrome
+  include chrome
+
+  #Skype
+  include skype
+
+  #CrashPlan
+  include crashplan
+
+  #Thunderbird
+  include thunderbird
 }

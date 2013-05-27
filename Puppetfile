@@ -34,3 +34,19 @@ github "sudo",       "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "sublime_text_2", "1.1.1"
+github "java", "1.1.0"
+# Until pull requests get merged
+# github "osx", "1.3.0"
+mod "osx", :git => 'git://github.com/yuhunglin/puppet-osx.git'
+github "iterm2", "1.0.2"
+github "bash", "1.1.0"
+github "dropbox", "1.1.0"
+github "caffeine", "1.0.0"
+github "vlc", "1.0.1"
+github "firefox", "1.0.6"
+github "adium", "1.1.1"
+github "imageoptim", "0.0.2"
+github "chrome", "1.1.0"
+github "skype", "1.0.2"
+github "crashplan", "1.0.1"
+github "thunderbird", "1.0.1"
