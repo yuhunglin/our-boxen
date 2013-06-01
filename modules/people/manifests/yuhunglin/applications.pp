@@ -84,8 +84,12 @@ class people::yuhunglin::applications {
   #Thunderbird
   include thunderbird
 
+  #Intellij
   class { 'intellij':
   edition => 'ultimate',
     version => '12.1.2'
   }
+
+  #Heroku
+  include heroku
 }
