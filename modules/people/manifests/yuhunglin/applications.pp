@@ -83,4 +83,9 @@ class people::yuhunglin::applications {
 
   #Thunderbird
   include thunderbird
+
+  class { 'intellij':
+  edition => 'ultimate',
+    version => '12.1.2'
+  }
 }
