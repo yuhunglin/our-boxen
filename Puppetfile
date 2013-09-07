@@ -30,6 +30,7 @@ github "repository", "2.2.0"
 github "ruby",       "5.1.0"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
+github "nvm",        "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

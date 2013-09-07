@@ -43,7 +43,9 @@ class people::yuhunglin::application_settings {
 
   #OS X defaults
   #until pull requests get merged.
-  include osx::global::disable_natural_mouse_scrolling
+  class { 'osx::global::natural_mouse_scrolling':
+    enabled => false
+  }
   include osx::global::disable_remote_control_ir_receiver
 
   include osx::no_network_dsstores
@@ -53,4 +55,12 @@ class people::yuhunglin::application_settings {
   include osx::finder::empty_trash_securely
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
+
+  #Node
+  nodejs::module { ['coffee-script']:
+    node_version => 'v0.10'
+  }
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
 }
