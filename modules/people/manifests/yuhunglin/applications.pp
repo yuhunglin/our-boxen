@@ -92,7 +92,4 @@ class people::yuhunglin::applications {
 
   #Heroku
   include heroku
-
-  #Node
-  include nodejs::v0_10
 }

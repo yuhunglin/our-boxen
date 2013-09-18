@@ -58,9 +58,9 @@ class people::yuhunglin::application_settings {
 
   #Node
   nodejs::module { ['coffee-script']:
-    node_version => 'v0.10'
+    node_version => 'v0.10.13'
   }
   class { 'nodejs::global':
-    version => 'v0.10'
+    version => 'v0.10.13'
   }
 }
