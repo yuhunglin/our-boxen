@@ -68,7 +68,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.1.2)
+    homebrew (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -141,6 +141,16 @@ GITHUBTARBALL
     thunderbird (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (2.0.12)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-vlc
   specs:
     vlc (1.0.1)
@@ -168,7 +178,7 @@ DEPENDENCIES
   gcc (= 1.0.0)
   git (= 1.2.2)
   heroku (= 2.0.0)
-  homebrew (= 1.1.2)
+  homebrew (= 1.4.1)
   hub (= 1.0.0)
   imageoptim (= 0.0.2)
   inifile (= 0.9.0)
@@ -186,5 +196,7 @@ DEPENDENCIES
   sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
   thunderbird (= 1.0.1)
+  vagrant (= 2.0.12)
+  virtualbox (= 1.0.5)
   vlc (= 1.0.1)
 

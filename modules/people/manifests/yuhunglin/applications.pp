@@ -92,4 +92,10 @@ class people::yuhunglin::applications {
 
   #Heroku
   include heroku
+
+  #Virtualbox
+  include virtualbox
+
+  #Vagrant
+  include vagrant
 }
