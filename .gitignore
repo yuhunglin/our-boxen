@@ -11,3 +11,4 @@
 !/shared/README.md
 vendor/cache/*
 vendor/puppet/cache/*
+vendor/puppet/source/*
