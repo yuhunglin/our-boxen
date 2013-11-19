@@ -44,8 +44,7 @@ class people::yuhunglin::application_settings {
     value => 'status -sb'
   }
   git::config::global{'alias.lg':
-    value => 'log --color --graph --pretty=format:\'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\' --abbrev-commit
-credential.helper=/opt/boxen/bin/boxen-git-credential'
+    value => 'log --color --graph --pretty=format:\'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\' --abbrev-commit credential.helper=/opt/boxen/bin/boxen-git-credential'
   }
 
   #OS X defaults

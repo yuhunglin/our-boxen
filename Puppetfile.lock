@@ -161,11 +161,6 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-thunderbird
-  specs:
-    thunderbird (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (2.0.14)
@@ -230,7 +225,6 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
-  thunderbird (= 1.0.1)
   vagrant (= 2.0.14)
   virtualbox (= 1.0.9)
   vlc (= 1.0.1)
