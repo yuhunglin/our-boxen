@@ -43,7 +43,7 @@ class people::yuhunglin::applications {
   # TODO: find another home for this (artifactory?)
   package {'Truecrypt':
     ensure => installed,
-    source => '/opt/boxen/repo/vendor/misc/FalseCrypt-7.1a.dmg', 
+    source => '/opt/boxen/repo/vendor/misc/FalseCrypt-7.1a.dmg',
     provider => pkgdmg,
   }
 
@@ -98,4 +98,7 @@ class people::yuhunglin::applications {
 
   #Vagrant
   include vagrant
+
+  #alfred
+  include alfred
 }

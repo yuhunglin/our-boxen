@@ -1,5 +1,5 @@
 class people::yuhunglin::application_settings {
-  notify { 'class people::yuhunglin::application_settings declared': } 
+  notify { 'class people::yuhunglin::application_settings declared': }
   # Sublime 2
   file { "/Users/${::luser}/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings":
     content => template('people/sublime_text_2-Base File.sublime-settings.erb'),
@@ -39,6 +39,13 @@ class people::yuhunglin::application_settings {
   }
   git::config::global{'push.default':
     value => 'upstream',
+  }
+  git::config::global{'alias.st':
+    value => 'status -sb'
+  }
+  git::config::global{'alias.lg':
+    value => 'log --color --graph --pretty=format:\'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\' --abbrev-commit
+credential.helper=/opt/boxen/bin/boxen-git-credential'
   }
 
   #OS X defaults
