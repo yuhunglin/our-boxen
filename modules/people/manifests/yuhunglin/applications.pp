@@ -81,9 +81,6 @@ class people::yuhunglin::applications {
   #CrashPlan
   include crashplan
 
-  #Thunderbird
-  include thunderbird
-
   #Intellij
   class { 'intellij':
   edition => 'ultimate',

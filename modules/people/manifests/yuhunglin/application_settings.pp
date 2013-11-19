@@ -70,4 +70,9 @@ credential.helper=/opt/boxen/bin/boxen-git-credential'
   class { 'nodejs::global':
     version => 'v0.10.13'
   }
+
+  #brew packages
+  package {
+    ['sshfs']:
+  }
 }
